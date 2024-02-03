@@ -9,6 +9,7 @@ phases:
       - echo $AWS_DEFAULT_REGION
       - echo $IMAGE_REPO_NAME
       - echo $IMAGE_TAG
+      - echo $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
 
   build:
     commands:
